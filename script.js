@@ -27,7 +27,7 @@ function loadingAnimation() {
   tl.to("#loader", {
     opacity: 0,
     display: "none",
-    duration: 0.2 ,
+    duration: 0.2,
     delay: 3.7,
   });
   tl.from("#page1", {
@@ -35,14 +35,24 @@ function loadingAnimation() {
     delay: 0,
     ease: Power4,
   });
+  tl.from("#nav", {
+    opacity: 0,
+  });
+  tl.from(
+    "#page1-content1 h1,#page1-content2 h1,#page1-content3 h2,#page1-content4 h1",
+    {
+      y: 120,
+      stagger: 0.1,
+    }
+  );
 }
-function cursorAnimation (){
-  document.addEventListener("mousemove", function(dets){
+function cursorAnimation() {
+  document.addEventListener("mousemove", function (dets) {
     gsap.to("#crsr", {
-      left:dets.x,
-      top:dets.y
-    })
-  })
+      left: dets.x,
+      top: dets.y,
+    });
+  });
   Shery.makeMagnet("#nav-part2 h4", {
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     duration: 1,
