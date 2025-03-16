@@ -20,6 +20,16 @@ html, body {
     height: 100%;
     width: 100%;
 }
+#crsr {
+    height: 2.8vw;
+    width: 2.8vw;
+    border-radius: 50%;
+    border: 1px solid #d2d0d0ca;
+    position: fixed;
+    z-index: 999;
+    transform: translate(-50%,-50%);
+    mix-blend-mode: difference;
+}
 #loader {
     height: 100%;
     width: 100%;
