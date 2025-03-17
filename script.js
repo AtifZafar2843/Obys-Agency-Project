@@ -9,7 +9,7 @@ function loadingAnimation() {
   tl.from("#line1-part1", {
     opacity: -0.4,
     onStart: function () {
-      let h6timer = document.querySelector("#line1-part1 h6");
+      let h6timer = document.querySelector("#line1-part1 h5");
       let grow = 0;
       setInterval(() => {
         if (grow < 100) {
