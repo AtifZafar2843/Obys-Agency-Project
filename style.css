@@ -280,5 +280,59 @@ body {
   min-height: 100vh;
   width: 100%;
   background-color: #151515;
-  padding: 3vw 0;
+  padding: 6vw 0;
+  position: relative;
+}
+.elem {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin: -2vw 0;
+}
+.elem2 {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin: -2vw 0;
+}
+@keyframes textAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+.elem2 h1 {
+  font-size: 7.2vw;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  margin-right: 16px;
+  color: transparent;
+  display: inline-block;
+  animation-name: textAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 22s;
+  animation-direction: reverse;
+}
+.elem h1 {
+  font-size: 7.2vw;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  margin-right: 16px;
+  color: transparent;
+  display: inline-block;
+  animation-name: textAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 22s;
+}
+.elem span {
+  font-family: "silk serif";
+  color: transparent;
+}
+.elem2 span {
+  font-family: "silk serif";
+  color: transparent;
 }
